@@ -1,0 +1,37 @@
+{
+  "name": "cordova-disable-copy-paste",
+  "version": "1.0.0",
+  "description": "Enable on-device searchable app content indexing.",
+  "cordova": {
+    "id": "cordova-disable-copy-paste",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoEidinger/cordova-disable-copy-paste"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.5.0"
+    }
+  ],
+  "scripts": {
+      "test": "npm run jshint",
+      "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
+    },
+  "author": "Marco Eidinger <eidingermarco@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcoEidinger/cordova-disable-copy-paste/issues"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
+}

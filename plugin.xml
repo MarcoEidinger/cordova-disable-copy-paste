@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="us.eidinger.cordova-disable-copy-paste" version="1.0.0">
+    <name>Disable Copy Paste</name>
+
+    <platform name="ios">
+      <js-module name="DisableCopyPastePlugin" src="www/DisableCopyPastePlugin.js">
+          <clobbers target="cordova.plugins.disableCopyPaste"/>
+      </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="DisableCopyPastePlugin">
+                <param name="ios-package" value="DisableCopyPastePlugin" />
+                <param name="onload" value="true" />
+            </feature>
+            <preference name="DisableCopyPasteOnAppStart" value="false" />
+        </config-file>
+
+        <header-file src="src/ios/DisableCopyPastePlugin.h"/>
+        <source-file src="src/ios/DisableCopyPastePlugin.m"/>
+
+    </platform>
+</plugin>
