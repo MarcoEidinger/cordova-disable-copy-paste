@@ -1,6 +1,6 @@
 language: objective-c
 node_js:
-  - "4.2"
+  - "5.5"
 install:
   - npm install -g cordova
   - npm install -g ios-sim
