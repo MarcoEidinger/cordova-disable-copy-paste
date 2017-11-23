@@ -7,8 +7,4 @@ install:
   - npm install
 script:
   - npm test
-  - cordova create testapp us.eidinger.testapp
-  - cd testapp
-  - cordova platform add ios
-  - cordova plugin install /Users/travis/build/MarcoEidinger/cordova-disable-copy-paste
-  - cordova build
+  - npm run test:ios
