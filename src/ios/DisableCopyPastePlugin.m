@@ -80,6 +80,13 @@
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_clearClipboard)
                                                  name:UIApplicationDidEnterBackgroundNotification object:nil];
+    
+    // Feature enhancement: Clear the clipboard even if the App is inactive or terminated/crashed
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_clearClipboard)
+                                                 name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_clearClipboard)
+                                                 name:UIApplicationWillTerminateNotification object:nil];
+    
     self.clearClipboardRegistered = YES;
     return YES;
 }
