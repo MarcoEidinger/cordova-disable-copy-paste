@@ -7,4 +7,8 @@ install:
   - npm install
 script:
   - npm test
-  - cordova-paramedic --platform ios --plugin https://github.com/MarcoEidinger/cordova-disable-copy-paste
+  - cordova create testapp us.eidinger.testapp
+  - cd testapp
+  - cordova platform add ios
+  - cordova plugin install /Users/travis/build/MarcoEidinger/cordova-disable-copy-paste
+  - cordova build
