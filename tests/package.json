@@ -1,0 +1,14 @@
+{
+  "name": "cordova-disable-copy-paste-tests",
+  "version": "1.0.0-dev",
+  "description": "Test plugin for cordova-disable-copy-paste",
+  "cordova": {
+    "id": "cordova-disable-copy-paste-tests",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Marco Eidinger",
+  "license": "MIT"
+}
