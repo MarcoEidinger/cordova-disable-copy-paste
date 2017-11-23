@@ -3,7 +3,7 @@
 |[![Build Status](https://travis-ci.org/MarcoEidinger/cordova-disable-copy-paste.svg?branch=master)](https://travis-ci.org/MarcoEidinger/cordova-disable-copy-paste)|
 
 ## Overview
-This Cordova Plugin is iOS-specific which enables you to prevent copy-paste to other applications by clearing clipboard when entering background.
+This Cordova Plugin is iOS-specific which enables you to prevent copy-paste to other applications by clearing clipboard when entering background, is inactive or app crashed.
 
 Three major use case are supported:
 * disable Copy-Paste to other applications **automatically** (default: off)

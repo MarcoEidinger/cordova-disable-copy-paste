@@ -1,6 +1,6 @@
 {
   "name": "cordova-disable-copy-paste",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enable on-device searchable app content indexing.",
   "cordova": {
     "id": "cordova-disable-copy-paste",
